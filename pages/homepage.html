@@ -5,28 +5,129 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>eventFull</title>
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/photos.css">
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
 	
 </head>
+<nav>
+	<div id="navBar">
+		<div id="menu" class="navItem">⋮ Menu</div>
+		<div id="logo" class="navItem">eventFull</div>
+		<div id="icons" class="navItem"><img src="../images/settings.png"></div>
+	</div>
+
+	<div id="mySideMenu" class="sideMenu">
+		<a href="#">Home</a>
+		<a href="#">Saved Events</a>
+		<a href="myevents.html">My Events</a>
+		<a href="#">Profile</a>
+		<a href="#">Contact</a>
+	</div>
+</nav>
 <body>
 
 	<div id="main">
-		<div id="logo">eventFull</div>
+		
 		<h1 id="homepageTitle">August Events</h1>
 		<div class="timeFilter">
-			<div class="timeList">Today</div>
-			<div class="timeList">This week</div>
-			<div class="timeList">This month</div>
+			<a href="#today"><div class="timeList defaultPage" id="todayBtn">Today</div></a>
+			<a href="#thisWeek"><div class="timeList possiblePage1" id="thisWeekBtn">This week</div></a>
+			<a href="#thisMonth"><div class="timeList possiblePage2" id="thisMonthBtn">This month</div></a>
 		</div><br>
-		<div id="eventBox">
-			<a href="yogainthepark.html"><div class="eventCell">Yoga in the park</div></a>
-			<div class="eventCell">Banksy: Building Castles in the Sky Exhibition</div>
-		</div><br>
+		<div id="today">
+			<div class="eventBox">
+				<a href="yogainthepark.html"><div class="eventCell" id="yogaEvent">
+					<div class="eventText">
+						<h2 class="title">Yoga in the park</h2>
+						<h3 class="price">$20</h3>
+						<h4 class="attendance">49 People going</h4>
+					</div>
 
+					<div class="dateBox">
+						<h2 class="date">03</h2>
+						<h4 class="month">Aug</h4>
+					</div>
+				</div></a>
+				<div class="eventCell" id="banksy">
+					<div class="eventText">
+						<h2 class="title">Banksy: Building Castles<br>in the Sky Exhibition</h2>
+						<h3 class="price">$45</h3>
+						<h4 class="attendance">120 People going</h4>
+					</div>
+
+					<div class="dateBox">
+						<h2 class="date">03</h2>
+						<h4 class="month">Aug</h4>
+					</div>
+				</div><br>
+
+			</div>
 		</div>
+
+		<div id="thisWeek">
+			<div class="eventBox">
+				<div class="eventCell">
+					<div class="eventText">
+						<h2 class="title">Klimt: The Immersive<br>Experience</h2>
+						<h3 class="price">$50</h3>
+						<h4 class="attendance">120 People going</h4>
+					</div>
+
+					<div class="dateBox">
+						<h2 class="date">05</h2>
+						<h4 class="month">Aug</h4>
+					</div>
+				</div>
+				<div class="eventCell">
+					<div class="eventText">
+						<h2 class="title">Miami Island<br>Adventure</h2>
+						<h3 class="price">$58</h3>
+						<h4 class="attendance">21 People going</h4>
+					</div>
+
+					<div class="dateBox">
+						<h2 class="date">06</h2>
+						<h4 class="month">Aug</h4>
+					</div>
+				</div><br>
+
+			</div>
+		</div>
+
+		<div id="thisMonth">
+			<div class="eventBox">
+				<div class="eventCell">
+					<div class="eventText">
+						<h2 class="title">Skip the Line: Zoo</h2>
+						<h3 class="price">$25</h3>
+						<h4 class="attendance">23 People going</h4>
+					</div>
+
+					<div class="dateBox">
+						<h2 class="date">11</h2>
+						<h4 class="month">Aug</h4>
+					</div>
+				</div>
+				<div class="eventCell">
+					<div class="eventText">
+						<h2 class="title">Museum of Illusions:<br>3D Illusions Pass</h2>
+						<h3 class="price">$20</h3>
+						<h4 class="attendance">65 People going</h4>
+					</div>
+
+					<div class="dateBox">
+						<h2 class="date">17</h2>
+						<h4 class="month">Aug</h4>
+					</div>
+				</div><br>
+
+			</div>
+		</div>
+	</div>
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 	<script src="../js/index.js"></script>
+	<script src="../js/homepage.js"></script>
 </body>
 </html>

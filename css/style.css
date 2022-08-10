@@ -1,4 +1,4 @@
-#main {
+#main, nav {
   text-align: center;
   max-width: 400px;
   display: block;
@@ -9,6 +9,25 @@
   border-color: black;*/
 }
 
+a {
+	color: #5C5C5C;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#navBar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+#menu {
+	padding-top: 16px;
+	color: #71b0b0;
+}
+
 #logo {
 	font-family: "Pacifico";
 	text-align: center;
@@ -16,15 +35,64 @@
 	font-size: 30px;
 }
 
+.sideMenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #CBD6C8;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sideMenu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sideMenu a:hover {
+  color: #71B0B0;
+}
+
+.sideMenu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
 .mainButton {
 	margin: 40px;
-	padding: 10px;
+	padding: 8px;
 	border-color: #71b0b0;
+	border-style: solid;
 	color: #71b0b0;
 	border-radius: 16px;
 	background-color: white;
-	margin-left: 240px;
 	font-family: "Nunito Sans";
+	box-shadow: 4px 4px #EEEEEE;
+}
+
+#arrowBtn {
+	margin-left: 240px;
+}
+
+#interestBtn {
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+#purchaseButton, #returnBtn, #voucherButton {
+	background-color: #FDEC9C;
+	box-shadow: 4px 4px #5C5C5C;
 }
 
 h1 {
@@ -55,6 +123,7 @@ input[type=text] {
 	display: inline-grid;
 	grid-template-columns: 50% 50%;
 	gap: 8px 8px;
+	color: white;
 }
 
 .interestCell {
@@ -65,29 +134,87 @@ input[type=text] {
 	background-color: gray;
 	border-radius: 8px;
 	padding: 16px;
+	
 }
 
 .timeFilter {
 	display: inline-flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-evenly;
+	color: #5C5C5C;
 }
 
 .timeList {
 	margin: 16px;
 }
 
-#eventBox {
+.defaultPage {
+	color: #FD9F9D;
+	text-decoration: underline;
+}
+
+.eventBox {
 	display: inline-flex;
 	flex-direction: column;
+	position: relative;
+	width: 100%;
 }
 
 .eventCell {
 	background-color: gray;
 	border-radius: 8px;
-	padding-top: 64px;
-	padding-bottom: 64px;
+	padding-top: 32px;
 	margin: 8px;
+}
+
+.dateBox {
+	position: absolute;
+	right: 0;
+	z-index: 1;
+	border-radius: 8px;
+	color: white;
+	background-color: #FD9F9D;
+	margin: -40px 24px 16px 0;
+	width: 20%;
+	padding: 0;
+}
+
+.date {
+	margin: 5px;
+}
+
+.month {
+	margin: 10px;
+}
+
+.eventText {
+	padding-bottom: 0px;
+	text-align: left;
+	word-wrap: break-word;
+	padding: 8px;
+	display: grid;
+	grid-template-rows: 50% 50%;
+  grid-template-columns: 25% 75%;
+  grid-template-areas: 
+  "title title"
+  "price attendance"
+}
+
+.title {
+	color: white;
+	grid-area: title;
+}
+
+.price {
+	color: white;
+	margin-top: 4px;
+	grid-area: price;
+}
+
+.attendance {
+	color: white;
+	margin-top: 4px;
+	grid-area: attendance;
 }
 
 .eventCellFocus {
@@ -102,8 +229,8 @@ input[type=text] {
 	text-align: left;
 }
 
-#homepageTitle {
-
+.info {
+	color: #5C5C5C;
 }
 
 
@@ -111,6 +238,7 @@ input[type=text] {
 	display: grid;
 	justify-content: space-around;
 	text-align: left;
+	width: 400px;
 	grid-template-rows: 50% 50%;
   grid-template-columns: 50% 50%;
   grid-template-areas: 
@@ -141,11 +269,17 @@ input[type=text] {
 }
 
 .reviewCell {
-	background-color: gray;
+	background-color: #CBD6C8;
 	border-radius: 8px;
-	padding-top: 64px;
-	padding-bottom: 64px;
+	padding-top: 32px;
+	padding: 16px;
+	padding-bottom: 32px;
 	margin: 8px;
+	text-align: left;
+}
+
+.reviewName {
+	margin: -8px 0 8px 0;
 }
 
 #sideModal {
@@ -160,15 +294,25 @@ input[type=text] {
   overflow: hidden;
 }
 
-#reserve {
+#reserve, #resSuccess, #eventPopup {
 	width: 400px;
+	height: 500px;
 	border-radius: 16px;
 	background-color: #FDEC9C;
 }
 
 
 .modal.open {
-  transform: translateY(600px);
+  transform: translateY(550px);
+}
+
+.modal.close {
+  transform: translateY(-600px);
+}
+
+.eventModal.open {
+	z-index: 1;
+  transform: translateY(400px);
 }
 
 .modal {
@@ -186,6 +330,66 @@ input[type=text] {
   margin: auto;
 }
 
+#ticketQuant {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-content: space-evenly;
+
+}
+
+.quantBtn {
+	background-color: white;
+	width: 16px;
+	height: 16px;
+	color: #71b0b0;
+	padding: 8px;
+	font-size: 24px;
+}
+
+#ticketText {
+	padding: 8px;
+}
+
+#paymentGrid {
+	display: grid;
+	grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: 
+  "paypal applepay"
+  "cc cc"
+}
+
+#cc {
+	grid-area: cc;
+}
+
+#payMethod {
+	text-align: left;
+	color: #5C5C5C;
+	margin: 8px;
+}
+
+.payBtn {
+	margin: 4px;
+	padding: 4px;
+	border-radius: 8px;
+	background-color: white;
+	font-family: "Nunito Sans";
+	border: none;
+}
+
+#voucherButton {
+	margin-top: 20px;
+}
+
+#qr {
+	width: 100px;
+	height: 100px;
+	border: solid 8px;
+	border-color: white;
+	border-radius: 16px;
+}
 body {
 	font-family: "Nunito Sans";
 }

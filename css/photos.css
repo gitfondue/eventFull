@@ -1,0 +1,73 @@
+#fw {
+	background-image: linear-gradient(
+                    	rgba(20,20,20, .5), 
+                    	rgba(20,20,20, .5)),
+						url("../images/interest_selection-fitness.jpg");
+}
+
+#ca {
+	background-image: linear-gradient(
+                    	rgba(20,20,20, .5), 
+                    	rgba(20,20,20, .5)),
+						url("../images/interest_selection-culture_art.jpg");
+}
+
+#concert {
+	background-image: linear-gradient(
+                    	rgba(20,20,20, .5), 
+                    	rgba(20,20,20, .5)),
+						url("../images/interest_selection-concert_music.jpg");
+}
+
+#sa {
+	background-image: linear-gradient(
+                    	rgba(20,20,20, .5), 
+                    	rgba(20,20,20, .5)),
+						url("../images/interest_selection-sports.jpg");
+}
+
+#cinema {
+	background-image: linear-gradient(
+                    	rgba(20,20,20, .5), 
+                    	rgba(20,20,20, .5)),
+						url("../images/interest_selection-cinema.jpg");
+}
+
+#tt {
+	background-image: linear-gradient(
+                    	rgba(20,20,20, .5), 
+                    	rgba(20,20,20, .5)),
+                    	url("../images/interest_selection-tours.jpg");
+}
+
+#cw {
+	background-image: linear-gradient(
+                    	rgba(20,20,20, .5), 
+                    	rgba(20,20,20, .5)),
+						url("../images/interest_selection-courses.jpg");
+}
+
+#fe {
+	background-image: linear-gradient(
+                    	rgba(20,20,20, .5), 
+                    	rgba(20,20,20, .5)),
+						url("../images/interest_selection-food.png");
+}
+
+#yogaEvent {
+	background-image: linear-gradient(
+                    	rgba(20,20,20, .5), 
+                    	rgba(20,20,20, .5)),
+						url("../images/events-yoga.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+#banksy {
+	background-image: linear-gradient(
+                    	rgba(20,20,20, .5), 
+                    	rgba(20,20,20, .5)),
+						url("../images/events-banksy.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+}

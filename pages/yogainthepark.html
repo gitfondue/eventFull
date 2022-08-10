@@ -5,22 +5,37 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>eventFull</title>
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/photos.css">
 	  <!---<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">--->
 
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
 
 </head>
+<nav>
+	<div id="navBar">
+		<div id="menu" class="navItem">⋮ Menu</div>
+		<div id="logo" class="navItem">eventFull</div>
+		<div id="icons" class="navItem"><img src="../images/settings.png"></div>
+	</div>
+
+	<div id="mySideMenu" class="sideMenu">
+		<a href="homepage.html">Home</a>
+		<a href="#">Saved Events</a>
+		<a href="myevents.html">My Events</a>
+		<a href="#">Profile</a>
+		<a href="#">Contact</a>
+	</div>
+</nav>
 <body>
 
 	<div id="main">
-		<div id="logo">eventFull</div>
 		<div id="eventBox">
-			<div class="eventCellFocus">Yoga in the park</div>
+			<div class="eventCellFocus" id=#yogaEvent>Yoga in the park</div>
 			<div class="timeFilter">
-				<a href="#about"><div class="timeList" id="aboutBtn">About</div></a>
-				<a href="#detail"><div class="timeList" id="detailBtn">Detail</div></a>
-				<a href="#review"><div class="timeList" id="reviewBtn">Reviews</div></a>
+				<a href="#about"><div class="timeList defaultPage" id="aboutBtn">About</div></a>
+				<a href="#detail"><div class="timeList possiblePage1" id="detailBtn">Detail</div></a>
+				<a href="#review"><div class="timeList possiblePage2" id="reviewBtn">Reviews</div></a>
 			</div><br>
 			<div id="about">Enjoy a relaxing, multi-level yoga session at the park, Miami. Concentrate on the view of the turquoise ocean, listen to the sound of the waves, and let yourself be guided personally by the instructor into a state of relaxation. These sessions are meant for both beginners and advanced practitioners, and establish level variations and tiers. Finally, leave with some food for thought, with a wisdom quote from the yogi. If you love yoga, this is your chance for an exciting day out!</div>
 
@@ -48,24 +63,43 @@
 					<div class="reviewCell"><div class="reviewName">Kayla H.</div>
 				Very welcoming studio. Casual feel. The classes I e taken have been really good. I'm used to a hot yoga studio and this is a nice change and I still broke a sweat ! I will go...</div>
 				</div>
-			</div>
+			</div><br>
 
 			<a href="#reserve"><button class="mainButton" id="reserveBtn">Reserve</button></a>
 
 			<div id="reserve" class="modal modal_move">
-				<div class="modal-content">
+				<div id="realModal" class="modal-content">
 
-				1 Ticket<br>
-				Payment Method<br>
-				<button class="payBtn">Paypal</button>
-				<button class="payBtn">Apple Pay</button><br>
-				<button class="payBtn">Credit Card</button>
+				<div id="ticketQuant">
+					<div class="ticket quantBtn">-</div>
+					<div class="ticket" id="ticketText">1 Ticket</div>
+					<div class="ticket quantBtn">+</div>
+				</div>
+				<div id="payMethod">Payment Method</div><br>
 
-				<a href=""><button class="mainButton" id="purchaseButton">$ 20 - Get It</button></a>
+				<div id="paymentGrid">
+					<button id="paypal" class="payBtn">Paypal</button>
+					<button id="applepay" class="payBtn">Apple Pay</button><br>
+					<button id="cc" class="payBtn">Credit Card</button><br>
+				</div>
+
+				<a href="#resSuccess"><button class="mainButton" id="purchaseButton">$ 20 - Get It</button></a>
 				</div>
 
 			</div>
 
+			<div id="resSuccess" class="modal modal_move">
+				<div id="realModal" class="modal-content">
+
+				Payment Successful<br>
+
+				Total Payment Amount<br>
+				$20<br>
+
+				<a href="homepage.html"><button class="mainButton" id="purchaseButton">Return to the Page</button></a>
+				</div>
+
+			</div>
 
 		</div><br>
 
@@ -77,5 +111,6 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 	<script src="../js/index.js"></script>
+	<script src="../js/yogainthepark.js"></script>
 </body>
 </html>

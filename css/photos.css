@@ -71,3 +71,94 @@
 	background-size:cover;
 	background-repeat: no-repeat;
 }
+
+#paint {
+	background-image: linear-gradient(
+                    	rgba(20,20,20, .5), 
+                    	rgba(20,20,20, .5)),
+						url("../images/events-paint.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+#taco {
+	background-image: linear-gradient(
+                    	rgba(20,20,20, .5), 
+                    	rgba(20,20,20, .5)),
+						url("../images/events-taco.png");
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+#klimt {
+	background-image: linear-gradient(
+                	rgba(20,20,20, .5), 
+                	rgba(20,20,20, .5)),
+					url("../images/events-klimt.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+#miami {
+	background-image: linear-gradient(
+                	rgba(20,20,20, .5), 
+                	rgba(20,20,20, .5)),
+					url("../images/events-miami.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+#wagyu {
+	background-image: linear-gradient(
+                	rgba(20,20,20, .5), 
+                	rgba(20,20,20, .5)),
+					url("../images/events-mc_kitchen.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+#windsurf {
+	background-image: linear-gradient(
+                	rgba(20,20,20, .5), 
+                	rgba(20,20,20, .5)),
+					url("../images/events-windsurfing.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+#zoo {
+	background-image: linear-gradient(
+                	rgba(20,20,20, .5), 
+                	rgba(20,20,20, .5)),
+					url("../images/events-zoo.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+#illusions {
+	background-image: linear-gradient(
+                	rgba(20,20,20, .5), 
+                	rgba(20,20,20, .5)),
+					url("../images/events-moi.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;	
+}
+
+#custard {
+	background-image: linear-gradient(
+                	rgba(20,20,20, .5), 
+                	rgba(20,20,20, .5)),
+					url("../images/events-tart.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;	
+}
+
+#paddle {
+	background-image: linear-gradient(
+                	rgba(20,20,20, .5), 
+                	rgba(20,20,20, .5)),
+					url("../images/events-paddle.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;	
+}
+

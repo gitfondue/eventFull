@@ -162,3 +162,21 @@
 	background-repeat: no-repeat;	
 }
 
+#amc {
+	background-image: linear-gradient(
+                	rgba(20,20,20, .5), 
+                	rgba(20,20,20, .5)),
+					url("../images/events-amc.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;	
+}
+
+
+#vanGogh {
+	background-image: linear-gradient(
+                	rgba(20,20,20, .5), 
+                	rgba(20,20,20, .5)),
+					url("../images/events-van_gogh.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;	
+}

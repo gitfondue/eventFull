@@ -168,6 +168,14 @@ input[type=text] {
 	position: relative;
 }
 
+.myEventCell {
+	background-color: gray;
+	border-radius: 8px;
+	padding-top: 96px;
+	margin: 8px;
+	position: relative;
+}
+
 .eventCellFocus {
 	background-color: gray;
 	position: relative;
